@@ -1,0 +1,218 @@
+/* Global Styles */
+:root {
+  --primary-color: #e50914;
+  --dark-color: #141414;
+  --light-color: #f4f4f4;
+}
+
+* {
+  /*Resetting everythin*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: gray;
+}
+
+ul {
+  list-style: none; /*No bullets*/
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff; /*changed colour for headings*/
+}
+
+a {
+  color: #fff;
+  text-decoration: none; /*links default*/
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.showcase {
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url('../images/background.jpg') center center;
+}
+
+
+
+
+.showcase::after {      /*Pseudo Class for overlay shadow*/
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;         /*out of screen index*/
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 35px 65px 100px black, inset -10px -40px 100px black;
+}
+
+
+
+.showcase-top {
+    position: relative;
+    z-index: 2;
+    height: 90px; 
+}
+
+.showcase-top img {
+    width: 150px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+
+}
+
+
+.showcase-top a {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+
+}
+
+
+.showcase-content {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 6.9rem;
+
+}
+
+
+.showcase-content h1 {
+    font-weight: 550;
+    font-size: 3.1rem;
+    line-height: 1;
+    margin: 0 0 0.5rem;
+}
+
+.showcase-content p {
+    /*text-transform: uppercase;*/
+    color: #fff;
+    font-weight: 540;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0 0 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Buttons Class */
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 00.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+
+
+
+}
+
+
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.btn-xl {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+    text-transform: uppercase;
+}
+
+
+.btn-lg {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/* Footer Class */
+
+.footer {
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer, .footer a {
+    color: #999;
+    font-size: 0.8rem; 
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+
+.footer li {
+    line-height: 2;
+}
